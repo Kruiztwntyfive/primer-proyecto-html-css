@@ -15,6 +15,9 @@
             min-height: 8rem;
             background-color: darksalmon;
         }
+        header > h1{
+            text-align: center;
+        }
         nav
         {
             min-height: 4rem;
