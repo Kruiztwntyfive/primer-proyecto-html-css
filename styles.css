@@ -1,0 +1,47 @@
+*
+        {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*   Codigo de la pagina   */
+        header , nav, main
+        {
+            width: 80%;
+            margin: 0 auto;
+        }
+        header 
+        { 
+            min-height: 8rem;
+            background-color: darksalmon;
+        }
+        nav
+        {
+            min-height: 4rem;
+            background-color: orangered;
+        }
+        main
+        {
+            min-height: 30rem;
+            background-color: sandybrown;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        main > div 
+        {
+            border: 0.3rem solid black;
+            width: 30%;
+            
+        }
+        .izquierda{
+            background-color: yellow;
+        }
+        .derecha{
+            background-color: yellowgreen;
+        }
+        footer
+        {
+            min-height: 20rem;
+            background-color: crimson;
+        }
