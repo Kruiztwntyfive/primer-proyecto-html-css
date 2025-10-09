@@ -24,6 +24,7 @@
         {
             min-height: 30rem;
             background-color: sandybrown;
+            padding-bottom: 0.5rem;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
@@ -31,7 +32,10 @@
         main > div 
         {
             border: 0.3rem solid black;
+            border-radius: 0.5rem;
             width: 30%;
+            margin-top: 0.5rem;
+            padding: 1rem;
             
         }
         .izquierda{
