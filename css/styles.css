@@ -23,6 +23,11 @@
             min-height: 4rem;
             background-color: orangered;
         }
+        nav > h3{
+            text-align: center;
+            color: bisque;
+            font-size: 2rem;
+        }
         main
         {
             min-height: 30rem;
@@ -51,4 +56,9 @@
         {
             min-height: 20rem;
             background-color: crimson;
+        }
+        footer > h3{
+            text-align: center;
+            color: bisque;
+            font-size: 5rem;
         }
