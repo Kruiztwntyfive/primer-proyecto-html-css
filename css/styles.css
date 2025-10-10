@@ -1,70 +1,90 @@
-*
-        {
-            margin: 0;
-            padding: 0;
-        }
+* {
+    margin: 0;
+    padding: 0;
+}
 
-        /*   Codigo de la pagina   */
-        header , nav, main
-        {
-            /*width: 80%;*/
-            margin: 0 auto;
-        }
-        header 
-        { 
-            min-height: 8rem;
-            background-color: #0C3B1F;
-        }
-        header > h1{
-            text-align: center;
-            color: bisque;
-        }
-        nav
-        {
-            min-height: 4rem;
-            background-color: #04150B;
-        }
-        nav > h3{
-            text-align: center;
-            color: bisque;
-            font-size: 2rem;
-        }
-        main
-        {
-            width: 80%;
-            min-height: 30rem;
-            background-color: #209950;
-            padding-bottom: 0.5rem;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        main > div 
-        {
-            border: 0.2rem solid black;
-            border-radius: 0.5rem;
-            width: 30%;
-            margin-top: 0.5rem;
-            padding: 1rem;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            transition: all 0.5s ease-in-out;
-        }
-        main > div:hover{
-            transform: scale(1.05);
-        }
-        .izquierda{
-            background-color: #52DA84;
-        }
-        .derecha{
-            background-color: #52DA84;
-        }
-        footer
-        {
-            min-height: 20rem;
-            background-color: #0C3B1F;
-        }
-        footer > h3{
-            text-align: center;
-            color: bisque;
-            font-size: 5rem;
-        }
+/*   Codigo de la pagina   */
+header,
+nav,
+main {
+    /*width: 80%;*/
+    margin: 0 auto;
+}
+
+header {
+    min-height: 8rem;
+    background-color: #0C3B1F;
+}
+
+header>h1 {
+    text-align: center;
+    color: bisque;
+}
+
+nav {
+    min-height: 4rem;
+    background-color: #04150B;
+}
+
+nav>h3 {
+    text-align: center;
+    color: bisque;
+    font-size: 2rem;
+}
+
+main {
+    width: 80%;
+    min-height: 30rem;
+    background-color: #209950;
+    padding-bottom: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+main>div {
+    border: 0.2rem solid black;
+    border-radius: 0.5rem;
+    width: 30%;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.5s ease-in-out;
+}
+
+main>div:hover {
+    transform: scale(1.05);
+}
+
+.izquierda {
+    background-color: #52DA84;
+}
+
+.derecha {
+    background-color: #52DA84;
+}
+
+footer {
+    min-height: 20rem;
+    background-color: #0C3B1F;
+}
+
+footer>h3 {
+    text-align: center;
+    color: bisque;
+    font-size: 5rem;
+}
+
+/* Medias Queries */
+@media screen and (max-width: 600px) {
+
+    main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main > div{
+        width: 80%;
+
+    }
+}
