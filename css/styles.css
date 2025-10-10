@@ -7,7 +7,7 @@
         /*   Codigo de la pagina   */
         header , nav, main
         {
-            width: 80%;
+            /*width: 80%;*/
             margin: 0 auto;
         }
         header 
@@ -31,6 +31,7 @@
         }
         main
         {
+            width: 80%;
             min-height: 30rem;
             background-color: #209950;
             padding-bottom: 0.5rem;
