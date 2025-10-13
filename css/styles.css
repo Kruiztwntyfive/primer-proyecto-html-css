@@ -101,16 +101,29 @@ footer>h3 {
 }
 
 /* Medias Queries */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
 
-    main {
+    /*main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }*/
+
+    main>div {
+        width: 30%;
+
     }
+}
+@media screen and (max-width: 500px) {
+
+    /*body{
+        background-color: #04150B;
+    }*/
 
     main>div {
         width: 80%;
 
     }
+
+   
 }
