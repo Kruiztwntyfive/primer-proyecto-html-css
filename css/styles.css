@@ -67,11 +67,16 @@ nav>h3 {
 nav>ul{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-around;
 }
 
 nav>ul>li{
+    border: 1px outset rgba(255, 255, 255, 0.116);
+    border-radius: 1.5rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.096);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.068), 0 6px 20px 0 rgba(255, 255, 255, 0.068);
     display: inline;
     transition: all 0.3s ease-in-out;
 }
@@ -149,7 +154,7 @@ footer>h3 {
     }*/
     /*main>div {width: 30%;}*/
     main>img {width: 40%;}
-    
+
 }
 @media screen and (max-width: 500px) {
 
@@ -163,6 +168,6 @@ footer>h3 {
         width: 80%;
     }
 
-   
+
 }
 /* */
