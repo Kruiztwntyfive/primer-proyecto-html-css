@@ -4,11 +4,13 @@
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-ul{
+
+ul {
     list-style: none;
     margin-left: 0;
 }
-a{
+
+a {
     text-decoration: none;
     color: bisque;
     font-weight: bold;
@@ -27,7 +29,6 @@ footer {
 }
 
 header,
-nav,
 footer {
     /* 2. Activar Flexbox */
     display: flex;
@@ -38,7 +39,8 @@ footer {
     /* 4. Centrado Vertical */
     align-items: center;
 }
-body{
+
+body {
     background-image: url(../img/mountain.jpeg);
     background-size: cover;
     background-position: center;
@@ -60,9 +62,17 @@ header>h1 {
 }
 
 nav {
-    margin-top: 1rem;
+    /* margin-top: 1rem;
     min-height: 4rem;
-    background-color: #04150B;
+    background-color: #04150B; */
+    min-height: 4rem;
+        background-color: #04150B;
+        margin: 1rem auto; 
+        color: white;
+        padding: 2rem 0;
+        font-size: 1.5rem;
+        letter-spacing: 3px; 
+        text-align: center;
 }
 
 nav>h3 {
@@ -71,25 +81,34 @@ nav>h3 {
     font-size: 2rem;
 }
 
-nav>ul{
-    width: 100%;
-    display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: space-around;
-}
+    nav ul {
+        min-width: 6em;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 
-nav>ul>li{
-    border: 1px outset rgba(255, 255, 255, 0.116);
-    border-radius: 1.5rem;
-    padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.096);
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.068), 0 6px 20px 0 rgba(255, 255, 255, 0.068);
-    display: inline;
-    transition: all 0.3s ease-in-out;
-}
-nav>ul>li:hover{
-    transform: scale(1.2);
-}
+    nav ul li {
+        background-color: rgba(255, 255, 255, 0.096);
+        box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.068), 0 6px 20px 0 rgba(255, 255, 255, 0.068);
+        border-radius: 1.5rem;
+        margin: 0.3rem;
+        padding: 1rem;
+        width: 25%;
+        transition: all 0.5s ease-in-out;
+
+    }
+
+    nav ul li a {
+        text-decoration: none;   
+        display: block;
+        height: 2.3rem;
+        text-align: center;
+        }
+
+    nav ul li:hover {
+        transform: scale(1.2);
+    }
 
 
 main {
@@ -115,7 +134,7 @@ main {
     transition: all 0.5s ease-in-out;
 }*/
 
-main > img{
+main>img {
     width: 30%;
     border-radius: 1.5rem;
     /* filter: blur(1rem); */
@@ -123,9 +142,10 @@ main > img{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: all 0.5s ease-in-out;
 }
-main>img:hover{
+
+/* main>img:hover {
     transform: scale(1.05);
-}
+} */
 
 /*main>div:hover {
     transform: scale(1.05);
@@ -161,9 +181,19 @@ footer>h3 {
         align-items: center;
     }*/
     /*main>div {width: 30%;}*/
-    main>img {width: 40%;}
+    main>img {
+        width: 40%;
+    }
+
+    nav>ul {flex-direction: column;}
+    nav ul li {
+        width: 80%;
+        margin-top: 1.5rem;
+        padding-top: 1rem;
+    }
 
 }
+
 @media screen and (max-width: 500px) {
 
     /*body{
@@ -176,6 +206,17 @@ footer>h3 {
         width: 80%;
     }
 
+    header {display: none;}
+
+    nav ul li {width: 80%;
+        margin-top: 1rem;
+    }
+
+    nav ul li a{
+        height: 1.5rem;
+    }
+
 
 }
+
 /* */
