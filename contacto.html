@@ -22,6 +22,36 @@
             top: 0;
             left: 10%;
         }
+        .content
+        {
+            width: 55%;
+            min-height: 30rem;
+            background-color: #0c3b1f4b;;
+            /* border: 1px solid black; */
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+        }
+        aside
+        {
+            width: 35%;
+            min-height: 30rem;
+            background-color: #0c3b1f4b;
+            border-radius: 1.5rem;
+        }
+        input[name="nombre"], input[name="desplazamiento"]{
+            padding: 1rem;
+            border-radius: 1.5rem;
+            /* border: 1px outset gray; */
+            border: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+        button{
+            padding: 1rem;
+            border-radius: 0.7rem;
+            margin-top: 0.5rem;
+            border: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
     </style>
 </head>
 <body>
@@ -37,7 +67,20 @@
         <h1>Contacto del Sitio Web</h1>
     </header>
     <main>
+        <div class="content">
+            <form action="recogida_datos.php" method="post">
+                <p>Nombre <b style="color: red;">*</b></p>
+                <input type="text" name="nombre" placeholder="Ingresa el nombre" required>
+                <p>Desplazamiento</p>
+                <input type="text" name="desplazamiento" placeholder="Escribe el metodo de Despalazamiento">
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <!-- SIDE BAR -->
+        <aside>
 
+        </aside>
 
     </main>
     <footer>
